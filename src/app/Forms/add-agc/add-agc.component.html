@@ -1,0 +1,17 @@
+  <form class="form" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <p class="title">Ajoutez Un Agence</p>
+    <label class="lastname" for="name">
+    <input required formControlName="name" id="name" type="text" class="input" required="">
+    <span>Nom du L'Agence</span>
+  </label>
+    <label class="lastname" for="address">
+    <input required formControlName="address" id="address" type="text" class="input" required="">
+    <span>Address</span></label>
+    <label class="lastname" for="bank">
+    <select class="input2" formControlName="bank" id="bank">
+      <option *ngFor="let bank of banks" [ngValue]="bank">{{ bank.name }}</option>
+    </select>
+    <span>Bank</span>
+  </label>
+    <button type="submit" class="submit">ADD</button>
+  </form>

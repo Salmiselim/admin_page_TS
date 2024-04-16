@@ -1,0 +1,43 @@
+<nav>
+  <div class="navbar-wrapper">
+    <div class="m-header">
+      <a [routerLink]="['/default/']" class="b-brand">
+        <img src="assets/images/logo-dark.svg" class="logo logo-lg" />
+      </a>
+    </div>
+    <div class="left-list">
+      <ul class="lst">
+        <h5>Pages</h5>
+        <li class="bank-list" (click)="toggleList('bankSubList1')">Banques</li>
+        <ul class="sub-list" id="bankSubList1">
+          <li><a href="/addbq">Ajouter une banque</a></li>
+          <li><a href="/">Liste des banque</a></li>
+          <li><a href="banklistselect">Liste des banque selecter</a></li>
+        </ul>
+        <hr>
+        <li class="bank-list" (click)="toggleList('bankSubList2')">Agences</li>
+        <ul class="sub-list" id="bankSubList2">
+          <li><a href="/addagc">Ajouter Une Agence</a></li>
+          <li><a href="/agclist">Liste Des Agence</a></li>
+        </ul>
+        <hr>
+        <li class="bank-list" (click)="toggleList('bankSubList3')">Clients</li>
+        <ul class="sub-list" id="bankSubList3">
+          <li><a href="Listeclient">Lise des client</a></li>
+          <li><a href="addclient">Ajouter un client</a></li>
+        </ul>
+        <hr>
+        <li class="bank-list" (click)="toggleList('bankSubList4')">Commandes</li>
+        <ul class="sub-list" id="bankSubList4">
+          <li>Tout Les Commandes</li>
+          <li ><a href="/af">Appel De Fonds</a></li>
+          <li>Levée De Fonds</li>
+          <li>Mise A Disposition</li>
+          <li>Echange</li>
+        </ul>
+        <hr>
+      </ul>
+    </div>
+  </div>
+</nav>
+-

@@ -1,0 +1,35 @@
+<div *ngIf="Appelfond.length > 0">
+  <h1>Liste des Appels de Fond:</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Client Code</th>
+        <th>Client Name</th>
+        <th>Client Email</th>
+        <th>Date</th>
+        <th>B50</th>
+        <th>B20</th>
+        <th>B10</th>
+        <th>B5</th>
+        <th>Monnaie</th>
+
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let appelfondItem of Appelfond">
+        <td>{{ appelfondItem.client.code }}</td>
+        <td>{{ appelfondItem.client.adherant }}</td>
+        <td>{{ appelfondItem.client.email }}</td>
+        <td>{{ appelfondItem.createdAt }}</td>
+        <td>{{ appelfondItem.b50 }}</td>
+        <td>{{ appelfondItem.b20 }}</td>
+        <td>{{ appelfondItem.b10 }}</td>
+        <td>{{ appelfondItem.b5 }}</td>
+        <td>{{ appelfondItem.monnaie }}</td>
+
+
+      </tr>
+    </tbody>
+  </table>
+</div>
